@@ -8,7 +8,7 @@
 	<display-name>SMHE</display-name>
 	
 	<welcome-file-list>
-	    <welcome-file>index.html</welcome-file>
+	    <welcome-file>/views/index.jsp</welcome-file>
 	</welcome-file-list>
 	
 	<!-- Configuração SPRING -->
@@ -19,7 +19,7 @@
   </servlet-class>
   <init-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:/WEB-INF/application-context.xml
+    <param-value>/WEB-INF/application-context.xml
     </param-value>
   </init-param>
   <load-on-startup>1</load-on-startup>  
@@ -27,6 +27,6 @@
 
 <servlet-mapping>
   <servlet-name>springmvc</servlet-name>
-  <url-pattern>/</url-pattern>
+  <url-pattern>/views/*</url-pattern>
 </servlet-mapping>
 </web-app>

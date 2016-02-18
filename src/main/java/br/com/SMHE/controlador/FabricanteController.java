@@ -10,9 +10,9 @@ import br.com.SMHE.dao.FabricanteDAO;
 import br.com.SMHE.entity.Fabricante;
 
 @RestController
-@RequestMapping("/fabricante")
+@RequestMapping("/views")
 public class FabricanteController {
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value= "/fabricante", method = RequestMethod.GET)
 	public List<Fabricante> listar(){
 		FabricanteDAO dao = new FabricanteDAO();
 		List<Fabricante> resultado = dao.listar();
